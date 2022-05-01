@@ -1,0 +1,54 @@
+$background-color: hsl(212, 45%, 89%);
+$title-color: hsl(218, 44%, 22%);
+$text-color: hsl(220, 15%, 55%);
+$box-background-color: hsl(0, 0%, 100%);
+
+$font-family: "Outfit", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 15px;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: $font-family;
+  background: $background-color;
+  color: $text-color;
+
+  padding: 0 1rem;
+}
+
+.card {
+  display: inline-block;
+  background: $box-background-color;
+  padding: 20px;
+  border-radius: 20px;
+  width: min(100%, 321px);
+
+  &__qr {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__body {
+    padding: 12px 6px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $title-color;
+  }
+}
